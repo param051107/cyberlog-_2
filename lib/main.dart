@@ -1,32 +1,17 @@
-
 import 'package:flutter/material.dart';
-
+import 'odd_even.dart';
 
 void main() {
-
-
-
-  runApp(const MyFirstApp());
+  runApp(const MyApp());
 }
 
-class MyFirstApp extends StatelessWidget {
-  const MyFirstApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("If Lost, Contact"),
-        ),
-        body: const Center(
-          child: Text(
-            "Name: Dhruv\nPhone: +91 99999 99999",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
-          ),
-        ),
-      ),
+    return const MaterialApp(
+      home: OddEvenPage(),  // This connects to your OddEvenPage
     );
   }
 }
